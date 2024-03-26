@@ -5,3 +5,8 @@ body {
 .jumbotron ul {
   list-style-position: inside;
 }
+
+.products-header {
+  text-align: center;
+  margin: 25px;
+}
