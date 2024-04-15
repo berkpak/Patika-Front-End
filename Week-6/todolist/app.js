@@ -2,16 +2,22 @@ const getInput = document.querySelector('#task');
 const ul = document.querySelector('#list');
 
 function newElement() {
-  let li = document.createElement('li');
-  li.innerHTML = getInput.value;
-  ul.appendChild(li);
-  const span = document.createElement('span');
-  span.className = 'close';
-  span.innerHTML = '\u00d7';
-  li.appendChild(span);
+  if (getInput.value.trim() === '') {
+    $('.toast.error').toast('show');
+  } else {
+    let li = document.createElement('li');
+    li.innerHTML = getInput.value;
+    ul.appendChild(li);
+    const span = document.createElement('span');
+    span.className = 'close';
+    span.innerHTML = '\u00d7';
+    li.appendChild(span);
 
-  getInput.value = '';
-  saveToLocalStorage();
+    $('.toast.success').toast('show');
+
+    getInput.value = '';
+    saveToLocalStorage();
+  }
 }
 
 ul.addEventListener('click', e => {
