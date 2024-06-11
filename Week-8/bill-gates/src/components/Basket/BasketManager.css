@@ -1,0 +1,74 @@
+.products-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background: #fff;
+  padding: 20px 15px;
+  font-size: 18px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.product {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product .image {
+  margin-bottom: 10px;
+}
+
+.product .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-size: 20px;
+  color: #24c486;
+}
+
+.product .buttons {
+  font-size: 30px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  margin-top: 25px;
+}
+
+.product .buttons .sell {
+  background: linear-gradient(180deg, #f53b82, #f53b57);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product .buttons .buy {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.product .buttons .sell:disabled,
+.product .buttons .buy:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
