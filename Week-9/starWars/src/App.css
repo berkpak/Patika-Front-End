@@ -1,0 +1,66 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.starship-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.starship-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.starship-card:hover {
+  background-color: #e2e6ea;
+}
+
+.starship-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.starship-card p {
+  margin: 5px 0;
+}
+
+.starship-details {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.starship-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.starship-details p {
+  margin: 10px 0;
+}
